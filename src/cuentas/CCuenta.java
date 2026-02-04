@@ -83,6 +83,8 @@ public class CCuenta {
     {
         if (cantidad<0)
             throw new Exception("No se puede ingresar una cantidad negativa");
+        else if (cantidad == 0)
+            throw new Exception("No se puede ingresar una cantidad 0");    
         setSaldo(getSaldo() + cantidad);
     }
 
